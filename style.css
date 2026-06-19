@@ -1492,10 +1492,20 @@ position: relative;
   }
 
  .countdown-note {
-    width: 86vw;
-    margin-top: 28px;
-    font-size: 10.5px; /* იყო 11.5px */
-    line-height: 1.7;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 28px;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.countdown-subtitle {
+  display: block;
+  width: 100%;
+  font-size: 10px;
+  line-height: 1.45;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
 }
 
   .chapter {
