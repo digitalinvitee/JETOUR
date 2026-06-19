@@ -462,11 +462,11 @@ p {
 }
 
 .hero-content {
-  position: relative;
+position: relative;
   z-index: 2;
-  width: fit-content;
-  max-width: 720px;
-  text-align: center;
+  width: min(920px, 86vw);
+  max-width: 920px;
+  text-align: left;
 }
 
 .hero-eyebrow {
@@ -474,18 +474,19 @@ p {
 }
 
 .hero-headline {
-  width: fit-content;
-  max-width: 720px;
+  width: 100%;
+  max-width: 920px;
   font-family: var(--tech);
-  font-size: clamp(42px, 6.2vw, 86px);
+  font-size: clamp(38px, 5.8vw, 78px);
   font-weight: 700;
   line-height: 0.98;
   letter-spacing: -0.03em;
   color: rgba(255, 252, 248, 0.96);
   text-shadow: 0 18px 52px rgba(0, 0, 0, 0.56);
   text-align: left;
-    margin-top: 12px;
-    display: inline-block;
+  margin-top: 12px;
+  display: block;
+  white-space: normal;
 }
 
 .hero-meta {
@@ -577,7 +578,7 @@ p {
 .invitation-title {
   margin-bottom: 48px;
   font-family: var(--sans);
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(24px, 3vw, 38px);
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -758,10 +759,10 @@ p {
   max-width: 760px;
   color: var(--text);
   font-family: var(--sans);
-  font-size: clamp(36px, 5vw, 64px);
+  font-size: clamp(24px, 3vw, 38px);
   font-weight: 700;
   letter-spacing: -0.025em;
-  line-height: 1;
+  line-height: 1.15;
 }
 
 .program-layout {
@@ -964,6 +965,8 @@ p {
   margin-bottom: 26px;
   font-family: var(--sans);
   font-weight: 700;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.15;
 }
 
 .dress-note {
@@ -1078,6 +1081,8 @@ p {
   color: var(--text);
   font-family: var(--sans);
   font-weight: 700;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.15;
 }
 
 .rsvp-subtext {
@@ -1365,7 +1370,7 @@ p {
     height: 34px;
   }
 
- .music-btn {
+  .music-btn {
   width: 44px;
   height: 44px;
   right: 24px;
@@ -1398,12 +1403,15 @@ p {
   }
 
   .hero-headline {
-    max-width: 340px;
-    margin-top: 12px;
-    display: inline-block;
-    text-align: left;
-    font-size: clamp(30px, 9vw, 40px);
-    line-height: 1.03;
+      width: 100%;
+  max-width: 100%;
+  margin-top: 12px;
+  display: block;
+  text-align: left;
+  font-size: clamp(28px, 8vw, 36px);
+  line-height: 1.03;
+  white-space: normal;
+
   }
 
   .hero-meta {
@@ -1444,7 +1452,7 @@ p {
   }
 
   .invitation-title {
-    font-size: clamp(28px, 8vw, 38px);
+        font-size: clamp(22px, 6vw, 30px);
   }
 
   .invitation-body p {
@@ -1517,7 +1525,8 @@ p {
   }
 
   .event-content h2 {
-    font-size: clamp(30px, 10vw, 42px);
+    font-size: clamp(24px, 8vw, 34px);
+    line-height: 1.15;
   }
 
   .program-layout {
@@ -1623,7 +1632,8 @@ p {
   }
 
   .split-copy h2 {
-    font-size: clamp(28px, 8vw, 38px);
+    font-size: clamp(24px, 8vw, 34px);
+    line-height: 1.15;
   }
 
   .dress-note {
@@ -1662,6 +1672,11 @@ p {
   .recommendation li {
     font-size: 14px;
     line-height: 1.75;
+  }
+
+  .rsvp h2 {
+    font-size: clamp(24px, 8vw, 34px);
+    line-height: 1.15;
   }
 
   .success {
@@ -1802,8 +1817,8 @@ p {
   }
 
   .split-copy h2 {
-    font-size: clamp(34px, 3.8vw, 56px);
-    line-height: 1;
+    font-size: clamp(24px, 3vw, 38px);
+    line-height: 1.15;
     margin-bottom: 22px;
   }
 
