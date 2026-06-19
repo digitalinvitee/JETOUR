@@ -197,7 +197,7 @@ p {
 }
 
 .nav-logo {
-  height: 40px;
+  height: 30px;
   width: auto;
 }
 
@@ -1367,7 +1367,9 @@ position: relative;
   }
 
   .nav-logo {
-    height: 34px;
+    
+  height: 28px;
+
   }
 
   .music-btn {
