@@ -1491,12 +1491,12 @@ position: relative;
     letter-spacing: 0.12em;
   }
 
-  .countdown-note {
+ .countdown-note {
     width: 86vw;
     margin-top: 28px;
-    font-size: 11.5px;
+    font-size: 10.5px; /* იყო 11.5px */
     line-height: 1.7;
-  }
+}
 
   .chapter {
     min-height: 75svh;
