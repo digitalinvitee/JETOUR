@@ -178,13 +178,22 @@ p {
   left: 0;
   right: 0;
   z-index: 1400;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: calc(var(--sat) + 18px) 40px 18px;
+
+  height: 72px; /* ფიქსირებული სიმაღლე */
+  padding: 0 40px; /* ზედა/ქვედა padding მოვხსენით */
+
   background: rgba(247, 243, 238, 0.82);
   border-bottom: 1px solid var(--line);
   transition: background .4s var(--ease);
+}
+
+.nav-logo {
+  height: 56px; /* სურვილისამებრ 52px-მდეც შეგიძლია გაზარდო */
+  width: auto;
 }
 
 .nav-bar.scrolled {
@@ -196,10 +205,7 @@ p {
   align-items: center;
 }
 
-.nav-logo {
-  height: 30px;
-  width: auto;
-}
+
 
 .lang-switch {
   display: flex;
@@ -231,7 +237,7 @@ p {
 
 .music-btn {
   position: fixed;
-  right: 24px;
+  right: 50px;
   top: 90px;
   bottom: auto;
   z-index: 1600;
@@ -1368,14 +1374,14 @@ position: relative;
 
   .nav-logo {
     
-  height: 28px;
+  height: 56px;
 
   }
 
   .music-btn {
   width: 44px;
   height: 44px;
-  right: 24px;
+  right: 26px;
 
   top: 72px;
   bottom: auto;
